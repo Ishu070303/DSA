@@ -50,7 +50,7 @@ sort(nums.begin(), nums.end());
 for(int i=0; i<n; i++){
     int target_3 = target - nums[i];
     for(int j = i+1; j<n; j++){
-        int target_2 = target - nums[j];
+        int target_2 = target - nums[j]; //use long long in case if there is big value
         int left = j + 1;
         int right = n -1;
         while(left < right){
